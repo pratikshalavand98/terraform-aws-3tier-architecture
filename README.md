@@ -135,23 +135,23 @@ User → Web Tier → App Tier → Database Tier
 Place images inside **/screenshort** folder.
 
 ### Architecture Diagram
-screenshot/AWS 3-tier infrastructure architecture.png
+screenshot/AWS%203-tier%20infrastructure%20architecture.png
 
 
 ### Terraform Apply
-screenshot/VS Code Terraform cmd used.png
+screenshot/VS%20Code%20Terraform%20cmd%20used.png
 
 
 ### EC2 Instances
-screenshot/EC2 Instances (Web & App Servers).png
+screenshot/EC2%20Instances%20(Web%20%26%20App%20Servers).png
 
 ### RDS Database
-screenshot/RDS MySQL Database Instance.png
+screenshot/RDS%20MySQL%20Database%20Instance.png
 
 ### Web Application
 
-screenshot/App Frontend (Registration Page).png
-screenshot/App Frontend (Success Page).png
+screenshot/App%20Frontend%20(Registration%20Page).png
+screenshot/App%20Frontend%20(Success%20Page).png
 
 ---
 
