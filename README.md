@@ -26,7 +26,7 @@
 - [▶️ How to Run / Deploy](#️-how-to-run--deploy)
 - [📚 Key Learnings](#-key-learnings)
 - [🔮 Future Improvements](#-future-improvements)
-- [👩‍💻 Author](#-author)
+- [👩‍💻 Author](#author)
 ---
 
 # 📌 Project Overview
