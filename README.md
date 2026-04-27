@@ -135,19 +135,24 @@ User → Web Tier → App Tier → Database Tier
 Place images inside **/images** folder.
 
 ### Architecture Diagram
-![Architecture](images/architecture.png)
+<img width="1536" height="1024" alt="AWS 3-tier infrastructure architecture" src="https://github.com/user-attachments/assets/1fec5fdb-fd08-464f-85dd-86a916548891" />
+
 
 ### Terraform Apply
-![Terraform](images/terraform-apply.png)
+<img width="1913" height="1017" alt="VS Code Terraform cmd used" src="https://github.com/user-attachments/assets/7d3d0ee5-d7a6-4cdb-91c4-13832d43c6b3" />
+
 
 ### EC2 Instances
-![EC2](images/ec2.png)
+<img width="1919" height="862" alt="EC2 Instances (Web   App Servers)" src="https://github.com/user-attachments/assets/3e5ab810-680a-49ee-92a4-fca0e2cc612e" />
+
 
 ### RDS Database
-![RDS](images/rds.png)
+<img width="1919" height="867" alt="RDS MySQL Database Instance" src="https://github.com/user-attachments/assets/dbd13b41-2286-40c9-a123-8ae9439f8853" />
+
 
 ### Web Application
-![Web](images/web-form.png)
+<img width="1919" height="1019" alt="App Frontend (Registration Page)" src="https://github.com/user-attachments/assets/fd6b9193-dd9b-426d-90d8-7f2095e75cf4" />
+
 
 ---
 
