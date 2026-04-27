@@ -1,184 +1,216 @@
-# 🚀 Terraform AWS 3-Tier Architecture Deployment
+# 🚀 3-Tier Infrastructure Deployment Using Terraform Modules
 
-## 👩‍💻 Author
-
-**Pratiksha Lavand**
-MCA | DevOps & Cloud Enthusiast
-Savitribai Phule Pune University
-
----
-
-## 📌 Project Title
-
-**3-Tier Infrastructure Deployment Using Terraform Modules on AWS**
+![AWS](https://img.shields.io/badge/Cloud-AWS-orange?logo=amazonaws&logoColor=white)
+![Terraform](https://img.shields.io/badge/IaC-Terraform-623CE4?logo=terraform&logoColor=white)
+![EC2](https://img.shields.io/badge/Compute-EC2-red)
+![RDS](https://img.shields.io/badge/Database-RDS-blue)
+![VPC](https://img.shields.io/badge/Networking-VPC-green)
+![Nginx](https://img.shields.io/badge/WebServer-Nginx-009639?logo=nginx)
+![PHP](https://img.shields.io/badge/Backend-PHP-777BB4?logo=php)
+![MySQL](https://img.shields.io/badge/DB-MySQL-4479A1?logo=mysql)
+![DevOps](https://img.shields.io/badge/Project-DevOps-success)
 
 ---
 
-## 🧠 Project Overview
+# 📑 Table of Contents
 
-This project demonstrates a **production-ready 3-tier architecture** on AWS using **Infrastructure as Code (IaC)** with Terraform. The system is divided into:
-
-* 🌐 Web Tier (Public Subnet)
-* ⚙️ Application Tier (Private Subnet)
-* 🗄️ Database Tier (RDS in Private Subnet)
-
-The architecture ensures **scalability, security, and modularity** using Terraform modules.
-
----
-
-## 🏗️ Architecture Diagram
-
-![3-Tier Architecture](img/architecture.png)
-
-> ⚠️ Make sure your screenshot/diagram is placed in `img/architecture.png` in your GitHub repository.
+- [Project Overview](#-project-overview)
+- [Problem Statement](#-problem-statement--scenario)
+- [Objectives](#-objectives)
+- [Tech Stack](#-tech-stack)
+- [Architecture Workflow](#-architecture--workflow)
+- [Implementation Steps](#-implementation-steps)
+- [Security & Best Practices](#-security--best-practices-used)
+- [Screenshots](#-screenshots)
+- [Project Structure](#-project-structure)
+- [How to Deploy](#-how-to-run--deploy)
+- [Key Learnings](#-key-learnings)
+- [Future Improvements](#-future-improvements)
+- [Author](#-author)
 
 ---
 
-## 🧱 Architecture Flow
+# 📌 Project Overview
+
+This project demonstrates a **production-ready 3-Tier Web Application Architecture on AWS** using **Terraform Modules (Infrastructure as Code)**.
+
+The infrastructure is fully automated and modular, enabling organizations to replace manual provisioning with a **repeatable, scalable, and secure deployment process**.
+
+The architecture consists of:
+- 🌐 Web Tier (Public Subnet)
+- ⚙️ Application Tier (Private Subnet)
+- 🗄️ Database Tier (Private Subnet)
+
+---
+
+# 🧩 Problem Statement / Scenario
+
+You joined an **e-commerce company as a DevOps Intern**.  
+The organization wants to migrate from **manual infrastructure provisioning** to **Infrastructure as Code (IaC)** to reduce configuration errors and improve repeatability.
+
+The task was to design a **production-ready 3-tier architecture using Terraform modules** and automate provisioning of web, application, and database tiers.
+
+---
+
+# 🎯 Objectives
+
+- Automate infrastructure provisioning using Terraform  
+- Implement reusable Terraform modules  
+- Deploy secure AWS 3-tier architecture  
+- Automate server configuration using provisioners  
+- Demonstrate real-world DevOps workflow  
+
+---
+
+# 🛠️ Tech Stack
+
+| Category | Tools |
+|---|---|
+| Cloud Provider | AWS |
+| IaC Tool | Terraform |
+| Compute | EC2 |
+| Database | Amazon RDS (MySQL) |
+| Networking | VPC, Subnets, NAT Gateway |
+| Web Server | Nginx |
+| Backend | PHP |
+| Automation | Terraform Provisioners |
+| Version Control | Git & GitHub |
+
+---
+
+# 🏗️ Architecture / Workflow
+
+### Step-by-Step Flow
+
+1️⃣ User accesses web application via Internet  
+2️⃣ Request reaches **Web Tier EC2 (Public Subnet)**  
+3️⃣ Web server hosts **HTML Registration Form**  
+4️⃣ Form submits data to **Application Tier EC2 (Private Subnet)**  
+5️⃣ PHP backend processes request  
+6️⃣ Data stored in **Amazon RDS MySQL (Private Subnet)**  
 
 ```
-User Request
-    │
-    ▼
-Web Tier (Nginx EC2 - Public Subnet)
-    │
-    ▼
-Application Tier (PHP/Backend EC2 - Private Subnet)
-    │
-    ▼
-Database Tier (Amazon RDS - Private Subnet)
+User → Web Tier → App Tier → Database Tier
 ```
 
 ---
 
-## ☁️ AWS Components Used
+# ⚙️ Implementation Steps
 
-* VPC (Custom Network)
-* Public & Private Subnets (2 AZs)
-* Internet Gateway
-* NAT Gateway
-* Route Tables
-* Security Groups
-* EC2 Instances (Web & App Tier)
-* Amazon RDS (MySQL/PostgreSQL)
+### 1️⃣ Networking Setup
+- Created custom VPC
+- Configured public & private subnets across 2 AZs
+- Setup Internet Gateway & NAT Gateway
+- Configured route tables & security groups
+
+### 2️⃣ Web Tier Deployment
+- Launched EC2 in public subnet
+- Installed Nginx using provisioners
+- Deployed HTML registration form
+
+### 3️⃣ Application Tier Deployment
+- Launched EC2 in private subnet
+- Installed PHP & MySQL client
+- Created `submit.php` to send data to RDS
+
+### 4️⃣ Database Tier Deployment
+- Provisioned Amazon RDS MySQL
+- Configured private subnet group
+- Restricted access to App Tier only
 
 ---
 
-## 📦 Terraform Modules Structure
+# 🔐 Security / Best Practices Used
+
+- Private subnets for App & Database tiers  
+- No public access to RDS  
+- Security groups for tier-to-tier communication  
+- NAT Gateway for secure outbound internet access  
+- Modular Terraform code for reusability  
+
+---
+
+# 📸 Screenshots
+
+Place images inside **/images** folder.
+
+### Architecture Diagram
+![Architecture](images/architecture.png)
+
+### Terraform Apply
+![Terraform](images/terraform-apply.png)
+
+### EC2 Instances
+![EC2](images/ec2.png)
+
+### RDS Database
+![RDS](images/rds.png)
+
+### Web Application
+![Web](images/web-form.png)
+
+---
+
+# 📁 Project Structure
 
 ```
-project-root/
+terraform-aws-3tier-architecture/
 │
 ├── modules/
-│   ├── vpc/
-│   ├── ec2-web/
-│   ├── ec2-app/
-│   └── rds/
-│
-├── environments/
-│   └── dev/
+│ ├── vpc/
+│ ├── ec2-web/
+│ ├── ec2-app/
+│ └── rds/
 │
 ├── main.tf
 ├── variables.tf
 ├── outputs.tf
-└── provider.tf
+├── provider.tf
+└── terraform.tfvars
 ```
 
 ---
 
-## ⚙️ Automation Tools
+# ▶️ How to Run / Deploy
 
-* Terraform (Infrastructure provisioning)
-* User Data Scripts / Ansible (Configuration automation)
-
----
-
-## 🌐 Web Tier
-
-* EC2 instance in public subnet
-* Nginx installed
-* HTML registration form deployed
-
----
-
-## ⚙️ Application Tier
-
-* EC2 instance in private subnet
-* PHP backend (`submit.php`)
-* Handles form data and sends to database
-
----
-
-## 🗄️ Database Tier
-
-* Amazon RDS (MySQL/PostgreSQL)
-* Private access only
-* Connected via App Tier security group
-
----
-
-## 🚀 Deployment Steps
-
+### Clone Repository
 ```bash
-# Initialize Terraform
+git clone https://github.com/your-username/terraform-aws-3tier-architecture.git
+cd terraform-aws-3tier-architecture
+
+Initialize Terraform
+```bash
 terraform init
-
-# Validate configuration
+```
+Validate Configuration
+```bash
 terraform validate
-
-# Plan infrastructure
+```
+Plan Infrastructure
+```bash
 terraform plan
-
-# Apply infrastructure
-terraform apply -auto-approve
+```
+Deploy Infrastructure
+```bash
+terraform apply --auto-approve 
 ```
 
----
+# 📚 Key Learnings
+- Real-world Terraform project implementation
+- AWS VPC networking & security
+- Infrastructure as Code best practices
+- Multi-tier architecture design
+- Automation using Terraform provisioners
 
-## 📸 Screenshots
+# 🔮 Future Improvements
+- Add Load Balancer & Auto Scaling
+- Implement CI/CD pipeline
 
-### 1. Architecture Diagram
-
-![Architecture Screenshot](img/architecture.png)
-
-### 2. AWS Console Resources (optional)
-
-Add your EC2, VPC, RDS screenshots here
-
----
-
-## 🔐 Security Highlights
-
-* Private subnets for App & DB tiers
-* Security Groups restricting access
-* No direct DB exposure to internet
-
----
-
-## 📈 Key Benefits
-
-* Infrastructure as Code (IaC)
-* Modular and reusable design
-* Secure multi-tier architecture
-* Easy scalability
-
----
-
-## 📌 GitHub Repository
-
-```
-https://github.com/your-username/terraform-aws-3tier-architecture
-```
-
----
-
-## 🎯 Conclusion
-
-This project demonstrates real-world **DevOps practices using Terraform and AWS**, building a scalable and secure 3-tier system suitable for production environments.
-
----
-## 👩‍💻 Author
-
-**Pratiksha Lavand**
-MCA | DevOps & Cloud Enthusiast
-Savitribai Phule Pune University
+ # 👩‍💻 Author
+Pratiksha Lavand<br>
+Master of Computer Applications (MCA)<br>
+Savitribai Phule Pune University<br>
+☁️ Aspiring Cloud & DevOps Engineer 🚀
+- Add HTTPS with ACM & Route53
+- Use Ansible for advanced configuration
+  
