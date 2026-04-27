@@ -44,11 +44,12 @@ The architecture consists of:
 
 # 🧩 Problem Statement / Scenario
 
-You joined an **e-commerce company as a DevOps Intern**.  
-The organization wants to migrate from **manual infrastructure provisioning** to **Infrastructure as Code (IaC)** to reduce configuration errors and improve repeatability.
+# 🧩 Problem Statement / Scenario
 
-The task was to design a **production-ready 3-tier architecture using Terraform modules** and automate provisioning of web, application, and database tiers.
+As a DevOps Intern in an e-commerce company, the infrastructure was being provisioned manually, causing configuration errors and slow deployments.  
+To improve automation and consistency, the company adopted **Infrastructure as Code (IaC)** using Terraform.
 
+Using **IAM credentials and AWS CLI**, the task was to design and deploy a **secure 3-tier architecture** by automating the provisioning of the Web, Application, and Database tiers.
 ---
 
 # 🎯 Objectives
@@ -177,26 +178,34 @@ terraform-aws-3tier-architecture/
 
 # ▶️ How to Run / Deploy
 
-### Clone Repository
+◆ **Clone Repository**
 ```bash
 git clone https://github.com/your-username/terraform-aws-3tier-architecture.git
 cd terraform-aws-3tier-architecture
-
-Initialize Terraform
+```
+◆ **Initialize Terraform**
 ```bash
 terraform init
 ```
-Validate Configuration
+
+◆ **Validate Configuration**
 ```bash
 terraform validate
 ```
-Plan Infrastructure
+◆ **Plan Infrastructure**
 ```bash
 terraform plan
 ```
-Deploy Infrastructure
+### Deploy Infrastructure
 ```bash
 terraform apply --auto-approve 
+```
+◆ **Destroy Infrastructure (Cleanup)**
+
+To avoid AWS charges, destroy all created resources after testing:
+
+```bash
+terraform destroy --auto-approve
 ```
 
 # 📚 Key Learnings
@@ -209,12 +218,13 @@ terraform apply --auto-approve
 # 🔮 Future Improvements
 - Add Load Balancer & Auto Scaling
 - Implement CI/CD pipeline
-
- # 👩‍💻 Author
-Pratiksha Lavand<br>
-Master of Computer Applications (MCA)<br>
-Savitribai Phule Pune University<br>
-☁️ Aspiring Cloud & DevOps Engineer 🚀
 - Add HTTPS with ACM & Route53
 - Use Ansible for advanced configuration
-  
+
+  ## 👩‍💻 Author
+
+**Pratiksha Lavand**  
+☁️ Aspiring Cloud & DevOps Engineer  
+
+🔗 GitHub: [github.com/your-username](https://github.com/pratikshalavand98/)  
+🔗 LinkedIn: [linkedin.com/in/your-linkedin-id](https://www.linkedin.com/in/pratiksha-lavand/)
