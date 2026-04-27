@@ -132,26 +132,25 @@ User → Web Tier → App Tier → Database Tier
 
 # 📸 Screenshots
 
-Place images inside **/screenshort** folder.
+Images are stored inside **/screenshot** folder.
 
-### Architecture Diagram
-screenshot/AWS%203-tier%20infrastructure%20architecture.png
+### 🏗️ Architecture Diagram
+![Architecture](screenshot/AWS%203-tier%20infrastructure%20architecture.png)
 
+### ⚙️ Terraform Apply
+![Terraform Apply](screenshot/VS%20Code%20Terraform%20cmd%20used.png)
 
-### Terraform Apply
-screenshot/VS%20Code%20Terraform%20cmd%20used.png
+### 🖥️ EC2 Instances
+![EC2 Instances](screenshot/EC2%20Instances%20(Web%20%26%20App%20Servers).png)
 
+### 🗄️ RDS Database
+![RDS Database](screenshot/RDS%20MySQL%20Database%20Instance.png)
 
-### EC2 Instances
-screenshot/EC2%20Instances%20(Web%20%26%20App%20Servers).png
+### 🌐 Web Application – Registration Page
+![Registration Page](screenshot/App%20Frontend%20(Registration%20Page).png)
 
-### RDS Database
-screenshot/RDS%20MySQL%20Database%20Instance.png
-
-### Web Application
-
-screenshot/App%20Frontend%20(Registration%20Page).png
-screenshot/App%20Frontend%20(Success%20Page).png
+### ✅ Web Application – Success Page
+![Success Page](screenshot/App%20Frontend%20(Success%20Page).png)
 
 ---
 
