@@ -135,24 +135,23 @@ User → Web Tier → App Tier → Database Tier
 Place images inside **/images** folder.
 
 ### Architecture Diagram
-<img width="1536" height="1024" alt="AWS 3-tier infrastructure architecture" src="https://github.com/user-attachments/assets/1fec5fdb-fd08-464f-85dd-86a916548891" />
+screenshot/AWS 3-tier infrastructure architecture.png
 
 
 ### Terraform Apply
-<img width="1913" height="1017" alt="VS Code Terraform cmd used" src="https://github.com/user-attachments/assets/7d3d0ee5-d7a6-4cdb-91c4-13832d43c6b3" />
+screenshot/VS Code Terraform cmd used.png
 
 
 ### EC2 Instances
-<img width="1919" height="862" alt="EC2 Instances (Web   App Servers)" src="https://github.com/user-attachments/assets/3e5ab810-680a-49ee-92a4-fca0e2cc612e" />
-
+screenshot/EC2 Instances (Web & App Servers).png
 
 ### RDS Database
-<img width="1919" height="867" alt="RDS MySQL Database Instance" src="https://github.com/user-attachments/assets/dbd13b41-2286-40c9-a123-8ae9439f8853" />
-
+screenshot/RDS MySQL Database Instance.png
 
 ### Web Application
-<img width="1919" height="1019" alt="App Frontend (Registration Page)" src="https://github.com/user-attachments/assets/fd6b9193-dd9b-426d-90d8-7f2095e75cf4" />
-<img width="1919" height="999" alt="App Frontend (Success Page)" src="https://github.com/user-attachments/assets/6543e9b2-2f3f-431f-baca-df79fb6df8a2" />
+
+screenshot/App Frontend (Registration Page).png
+screenshot/App Frontend (Success Page).png
 
 ---
 
