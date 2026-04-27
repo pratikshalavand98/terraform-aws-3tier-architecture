@@ -220,9 +220,8 @@ terraform destroy --auto-approve
 - Implement CI/CD pipeline
 - Add HTTPS with ACM & Route53
 - Use Ansible for advanced configuration
-
+---
   ## 👩‍💻 Author
-
 **Pratiksha Lavand**  
 ☁️ Aspiring Cloud & DevOps Engineer  
 
