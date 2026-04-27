@@ -221,7 +221,7 @@ terraform destroy --auto-approve
 - Add HTTPS with ACM & Route53
 - Use Ansible for advanced configuration
 ---
-  ## 👩‍💻 Author
+  # 👩‍💻 Author
 **Pratiksha Lavand**  
 ☁️ Aspiring Cloud & DevOps Engineer  
 
