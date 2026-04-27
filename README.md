@@ -132,7 +132,7 @@ User → Web Tier → App Tier → Database Tier
 
 # 📸 Screenshots
 
-Place images inside **/images** folder.
+Place images inside **/screenshort** folder.
 
 ### Architecture Diagram
 screenshot/AWS 3-tier infrastructure architecture.png
