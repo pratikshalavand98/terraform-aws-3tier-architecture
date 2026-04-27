@@ -14,20 +14,19 @@
 
 # 📑 Table of Contents
 
-- [Project Overview](#-project-overview)
-- [Problem Statement](#-problem-statement--scenario)
-- [Objectives](#-objectives)
-- [Tech Stack](#-tech-stack)
-- [Architecture Workflow](#-architecture--workflow)
-- [Implementation Steps](#-implementation-steps)
-- [Security & Best Practices](#-security--best-practices-used)
-- [Screenshots](#-screenshots)
-- [Project Structure](#-project-structure)
-- [How to Deploy](#-how-to-run--deploy)
-- [Key Learnings](#-key-learnings)
-- [Future Improvements](#-future-improvements)
-- [Author](#-author)
-
+- [📌 Project Overview](#-project-overview)
+- [🧩 Problem Statement / Scenario](#-problem-statement--scenario)
+- [🎯 Objectives](#-objectives)
+- [🛠️ Tech Stack](#-tech-stack)
+- [🏗️ Architecture / Workflow](#️-architecture--workflow)
+- [⚙️ Implementation Steps](#️-implementation-steps)
+- [🔐 Security / Best Practices Used](#-security--best-practices-used)
+- [📸 Screenshots](#-screenshots)
+- [📁 Project Structure](#-project-structure)
+- [▶️ How to Run / Deploy](#️-how-to-run--deploy)
+- [📚 Key Learnings](#-key-learnings)
+- [🔮 Future Improvements](#-future-improvements)
+- [👩‍💻 Author](#-author)
 ---
 
 # 📌 Project Overview
@@ -152,7 +151,7 @@ Place images inside **/images** folder.
 
 ### Web Application
 <img width="1919" height="1019" alt="App Frontend (Registration Page)" src="https://github.com/user-attachments/assets/fd6b9193-dd9b-426d-90d8-7f2095e75cf4" />
-
+<img width="1919" height="999" alt="App Frontend (Success Page)" src="https://github.com/user-attachments/assets/6543e9b2-2f3f-431f-baca-df79fb6df8a2" />
 
 ---
 
