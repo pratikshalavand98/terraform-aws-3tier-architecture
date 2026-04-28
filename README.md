@@ -10,6 +10,7 @@
 ![MySQL](https://img.shields.io/badge/DB-MySQL-4479A1?logo=mysql)
 ![DevOps](https://img.shields.io/badge/Project-DevOps-success)
 
+
 ---
 
 # 📑 Table of Contents
@@ -74,6 +75,8 @@ Using **IAM credentials and AWS CLI**, the task was to design and deploy a **sec
 | Backend | PHP |
 | Automation | Terraform Provisioners |
 | Version Control | Git & GitHub |
+| IDE | Visual Studio Code |
+| Execution | Terraform CLI (Local Terminal) |
 
 ---
 
