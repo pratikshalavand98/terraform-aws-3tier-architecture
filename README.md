@@ -42,7 +42,6 @@ The architecture consists of:
 
 ---
 
-# 🧩 Problem Statement / Scenario
 
 # 🧩 Problem Statement / Scenario
 
